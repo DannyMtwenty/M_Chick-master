@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/palebeak"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dan.M_chick.Symptoms">
+
+    <TextView
+        android:id="@+id/txtSymptoms"
+        android:layout_width="184dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="8dp"
+        android:text="SYMPTOMS"
+        android:textSize="30dp"
+        android:textStyle="bold"
+      />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="354dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        android:textSize="10dp"
+        android:text="\n Please select the symptoms spotted on the chick and then click diagonize to get the  probable disease!"
+        android:textStyle="italic"
+      />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="0dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="366dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="75dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+            >
+
+                <CheckBox
+                    android:id="@+id/droopy"
+                    android:layout_width="148dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:onClick="SelectSymptoms"
+                    android:text="Droopy"
+                    />
+
+                <CheckBox
+                    android:id="@+id/lesions"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:onClick="SelectSymptoms"
+                    android:text="Pox lesions on face"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="0dp">
+
+                <CheckBox
+                    android:id="@+id/feathers"
+                    android:layout_width="157dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:onClick="SelectSymptoms"
+                    android:text="Ruffled feathers"
+                />
+
+                <CheckBox
+                    android:id="@+id/drowsyruffle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:onClick="SelectSymptoms"
+                    android:text="Drowsy and Ruffle"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="0dp">
+
+                <CheckBox
+                    android:id="@+id/coughing"
+                    android:layout_width="169dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:onClick="SelectSymptoms"
+                    android:text="Coughing and Sneezing"
+                   />
+
+                <CheckBox
+                    android:id="@+id/ygdiarrhoea"
+                    android:layout_width="158dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:onClick="SelectSymptoms"
+                    android:text="Yellowish/Greenish diarrhoea"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="0dp">
+
+                <CheckBox
+                    android:id="@+id/dullness"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:onClick="SelectSymptoms"
+                    android:text="Dullness"
+               />
+
+                <CheckBox
+                    android:id="@+id/squeakychirps"
+                    android:layout_width="137dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:onClick="SelectSymptoms"
+                    android:text="uttering squeaky chirps"
+                   />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+
+                tools:layout_editor_absoluteX="0dp">
+
+                <CheckBox
+                    android:id="@+id/Palebeak"
+                    android:layout_width="162dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:onClick="SelectSymptoms"
+                    android:text="Pale beak"
+            />
+
+                <CheckBox
+                    android:id="@+id/sleepy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:onClick="SelectSymptoms"
+                    android:text="Sleepy"
+                  />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="0dp">
+
+                <CheckBox
+                    android:id="@+id/bloodyd"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:onClick="SelectSymptoms"
+                    android:text="Broody droopings"
+                    />
+
+                <CheckBox
+                    android:id="@+id/feverishsleepy"
+                    android:layout_width="126dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:onClick="SelectSymptoms"
+                    android:text="Feverish and Sleepy"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="0dp">
+
+                <CheckBox
+                    android:id="@+id/raspysound"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:onClick="SelectSymptoms"
+                    android:text="raspy breath sounds"
+                   />
+
+                <CheckBox
+                    android:id="@+id/gasping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="23dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:onClick="SelectSymptoms"
+                    android:text="Gasping"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="0dp">
+
+                <CheckBox
+                    android:id="@+id/runnystool"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:onClick="SelectSymptoms"
+                    android:text="Runny stools"
+                    />
+
+                <CheckBox
+                    android:id="@+id/lethargic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="23dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:onClick="SelectSymptoms"
+                    android:text="Lethargic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="0dp">
+
+                <CheckBox
+                    android:id="@+id/discharge"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:onClick="SelectSymptoms"
+                    android:text="discharge from the eyes and nose"
+                    tools:ignore="OnClick" />
+
+                <CheckBox
+                    android:id="@+id/inflamations"
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:onClick="SelectSymptoms"
+                    android:text="local inflammations"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="0dp">
+
+                <CheckBox
+                    android:id="@+id/swolleneyes"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:onClick="SelectSymptoms"
+                    android:text="Swollen eyes"
+                   />
+
+                <CheckBox
+                    android:id="@+id/staggering"
+                    android:layout_width="wrap_content"
+                    android:layout_height="23dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:onClick="SelectSymptoms"
+                    android:text="Staggering"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/diagonize"
+                android:layout_width="117dp"
+                android:layout_height="31dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#000fff"
+                android:onClick="symptomsaction"
+                android:text="Diagonize"
+                android:textColor="#ffffff"
+               />
+
+            <TextView
+                android:id="@+id/display"
+                android:layout_width="396dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="8dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
