@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dan.M_chick.VaccinationGuide">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="VACCINATION GUIDE FOR POULTRY FARMER"
+        android:textColor="@color/amber"/>
+    <TextView
+        android:id="@+id/txtwarn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:layout_marginTop="50dp"
+        android:textSize="10dp"
+        android:text="Please if you are not very sure on how to do the vaccination based on the guide the guide given below,kindly lias with poultry veterinarian"
+        android:textColor="#f22b11"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtwarn"
+        android:layout_marginTop="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_schedule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0ddb02"
+                android:text="Schedule for chicks vaccination"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/btn_m1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/primary"
+                android:text="Vaccinating with a Subcutaneous Injection"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/btn_m2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#0ddb02"
+                android:text="Administering Eye Drop Vaccines"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/btn_m3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/primary"
+                android:text="Mixing Vaccines in Drinking Water"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/btn_m4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#0ddb02"
+                android:text="Oral method of vaccination"
+                android:textColor="#ffffff" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/vacc"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

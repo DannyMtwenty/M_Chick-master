@@ -5,12 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#d3e629"
     tools:context="com.dan.M_chick.Login">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="sign-in"
-        android:layout_marginLeft="120dp"
+       android:layout_gravity="center"
+        android:textAlignment="center"
         android:textAllCaps="true"
         android:textSize="35dp"
         android:textColor="@color/primaryDark"/>
@@ -26,12 +28,13 @@
         android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:layout_gravity="center"
-        android:inputType="textEmailAddress"
         android:layout_marginTop="30dp"
+        android:ems="10"
         android:hint="Enter your UserName"
-        android:textAlignment="center"/>
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColor="#4CAF50" />
 
     <EditText
         android:id="@+id/password"
@@ -58,17 +61,19 @@
     <TextView
         android:id="@+id/txtreg"
         android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:layout_marginLeft="115dp"
+        android:layout_height="wrap_content"
+       android:layout_gravity="center"
         android:textSize="15dp"
+        android:textAlignment="center"
         android:textColor="#000fff"
         android:text="Click me to register" />
     <TextView
         android:id="@+id/txtaboutus"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:layout_marginLeft="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
         android:textSize="15dp"
         android:textColor="@color/primaryDark"
         android:text="About Us" />
