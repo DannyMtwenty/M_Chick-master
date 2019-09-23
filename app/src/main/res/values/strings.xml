@@ -71,8 +71,8 @@
         <item>Advanced</item>
     </string-array>
     <string name="dilution">Correct dilution of the vaccine is critical. If eye-droppers are being used, they should be calibrated beforehand. In the absence of suitable eye-droppers, it is also possible to use the tip of a feather or a syringe (preferably a 1 mL syringe) to administer the drop. Most live ND vaccines require re-vaccination at 3-4 monthly intervals.</string>
-<string name="eyeimportance">Eye-drop administration provides good protection because the vaccine passes to the Harderian gland just behind the eye, which in chickens is a key organ in the development of the immune response.</string>
-<string name="drinking">remove drinking water from the chickens for 1-2 hours before the administration of the vaccine.
+    <string name="eyeimportance">Eye-drop administration provides good protection because the vaccine passes to the Harderian gland just behind the eye, which in chickens is a key organ in the development of the immune response.</string>
+    <string name="drinking">remove drinking water from the chickens for 1-2 hours before the administration of the vaccine.
 
 mix the vaccine with a volume of water that the chickens will be able to drink during one hour (usually 5-7 mL of water per bird).
 
@@ -83,5 +83,5 @@ use disinfectants to clean water receptacles as they will inactivate the vaccine
 
 use treated tap water. </string>
     <string name="drinkingadv">In rural areas, it is best to give the drinking water in the morning just as the chickens are released from the chicken house. In areas with abundant surface water, chickens find their own source of drinking water and vaccination via water is not appropriate.</string>
-<string name="oral">With this method the vaccine dose is given in the mouth. From here it may make its way to the respiratory system or it may continue in the digestive tract before entering the body.The recommended dosage is about 0.1-0.5ml</string>
+    <string name="oral">With this method the vaccine dose is given in the mouth. From here it may make its way to the respiratory system or it may continue in the digestive tract before entering the body.The recommended dosage is about 0.1-0.5ml</string>
 </resources>

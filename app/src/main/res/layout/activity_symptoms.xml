@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/palebeak"
+    android:background="#FF5500"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.dan.M_chick.Symptoms">
@@ -24,6 +24,7 @@
         android:layout_width="354dp"
         android:layout_height="56dp"
         android:layout_marginTop="20dp"
+        android:textColor="@color/primary_lightest"
         android:textSize="10dp"
         android:text="\n Please select the symptoms spotted on the chick and then click diagonize to get the  probable disease!"
         android:textStyle="italic"
@@ -58,11 +59,13 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginRight="8dp"
                     android:onClick="SelectSymptoms"
+                    android:textColor="@color/primary_lightest"
                     android:text="Droopy"
                     />
 
                 <CheckBox
                     android:id="@+id/lesions"
+                    android:textColor="@color/primary_lightest"
                     android:layout_width="115dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="35dp"
@@ -86,6 +89,7 @@
 
                 <CheckBox
                     android:id="@+id/feathers"
+                    android:textColor="@color/primary_lightest"
                     android:layout_width="157dp"
                     android:layout_height="22dp"
                     android:layout_marginStart="8dp"
@@ -98,6 +102,7 @@
 
                 <CheckBox
                     android:id="@+id/drowsyruffle"
+                    android:textColor="@color/primary_lightest"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
@@ -122,6 +127,7 @@
 
                 <CheckBox
                     android:id="@+id/coughing"
+                    android:textColor="@color/primary_lightest"
                     android:layout_width="169dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -133,6 +139,7 @@
 
                 <CheckBox
                     android:id="@+id/ygdiarrhoea"
+                    android:textColor="@color/primary_lightest"
                     android:layout_width="158dp"
                     android:layout_height="match_parent"
                     android:layout_marginStart="0dp"
@@ -156,6 +163,7 @@
 
                 <CheckBox
                     android:id="@+id/dullness"
+                    android:textColor="@color/primary_lightest"
                     android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -167,6 +175,7 @@
 
                 <CheckBox
                     android:id="@+id/squeakychirps"
+                    android:textColor="@color/primary_lightest"
                     android:layout_width="137dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -189,6 +198,7 @@
 
                 <CheckBox
                     android:id="@+id/Palebeak"
+                    android:textColor="@color/primary_lightest"
                     android:layout_width="162dp"
                     android:layout_height="26dp"
                     android:layout_marginStart="8dp"
@@ -200,6 +210,7 @@
 
                 <CheckBox
                     android:id="@+id/sleepy"
+                    android:textColor="@color/primary_lightest"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
@@ -222,6 +233,7 @@
 
                 <CheckBox
                     android:id="@+id/bloodyd"
+                    android:textColor="@color/primary_lightest"
                     android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -233,6 +245,7 @@
 
                 <CheckBox
                     android:id="@+id/feverishsleepy"
+                    android:textColor="@color/primary_lightest"
                     android:layout_width="126dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -253,6 +266,7 @@
                 <CheckBox
                     android:id="@+id/raspysound"
                     android:layout_width="170dp"
+                    android:textColor="@color/primary_lightest"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
@@ -263,6 +277,7 @@
 
                 <CheckBox
                     android:id="@+id/gasping"
+                    android:textColor="@color/primary_lightest"
                     android:layout_width="wrap_content"
                     android:layout_height="23dp"
                     android:layout_marginStart="8dp"
@@ -282,6 +297,7 @@
 
                 <CheckBox
                     android:id="@+id/runnystool"
+                    android:textColor="@color/primary_lightest"
                     android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -293,6 +309,7 @@
 
                 <CheckBox
                     android:id="@+id/lethargic"
+                    android:textColor="@color/primary_lightest"
                     android:layout_width="wrap_content"
                     android:layout_height="23dp"
                     android:layout_marginStart="8dp"
@@ -312,6 +329,7 @@
 
                 <CheckBox
                     android:id="@+id/discharge"
+                    android:textColor="@color/primary_lightest"
                     android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -323,6 +341,7 @@
 
                 <CheckBox
                     android:id="@+id/inflamations"
+                    android:textColor="@color/primary_lightest"
                     android:layout_width="144dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -342,6 +361,7 @@
 
                 <CheckBox
                     android:id="@+id/swolleneyes"
+                    android:textColor="@color/primary_lightest"
                     android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -352,14 +372,15 @@
                    />
 
                 <CheckBox
-                    android:id="@+id/staggering"
+                    android:id="@+id/yellowishdroppings"
+                    android:textColor="@color/primary_lightest"
                     android:layout_width="wrap_content"
                     android:layout_height="23dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
                     android:onClick="SelectSymptoms"
-                    android:text="Staggering"
+                    android:text="Yellowish droppings"
                     />
             </LinearLayout>
 

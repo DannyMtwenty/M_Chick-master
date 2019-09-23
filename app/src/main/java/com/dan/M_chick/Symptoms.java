@@ -165,12 +165,12 @@ public class Symptoms extends AppCompatActivity {
                     selection.remove("Swollen eyes");
                 }
                 break;
-            case R.id.staggering:
+            case R.id.yellowishdroppings:
                 if (checked) {
-                    selection.add("Staggering");
-                    display.setText("Disease: Infectious Coryza \n \n Causes: by bacterium Haemophilus pargallinarum  \n \n Control:Use of available antibiotics such as Streptomycin and sulphonamides,Use of vaccines ");
+                    selection.add("Yellowish droppings");
+                    display.setText("Disease: Fowl Cholera \n \n Causes: caused by pasteurella avicida microorganism  \n \n Control: Use of sulphur drugs, use of coccidiostat in feed, ensuring dry litter,Birds with acute type should be destroyed and burned,House should be thoroughly cleaned and disinfected  ");
                 } else {
-                    selection.remove("Staggering");
+                    selection.remove("Yellowish droppings");
                 }
             case R.id.discharge:
                 if (checked) {
@@ -291,17 +291,14 @@ public class Symptoms extends AppCompatActivity {
             display.setText("Disease: Infectious Sinusitis \n \n Causes: caused by micro-organism Mycoplasma Gallisepticu  \n \n Control:Use of available antibiotics ");
         }
         //for  Infectious Coryza
-        if (selection.contains("Staggering")) {
-            display.setText("Disease: Infectious Coryza \n \n Causes: Due to of GMOs  \n \n Control:Use of available antibiotics ");
-        }
         if (selection.contains("Coughing and Sneezing") && selection.contains("discharge from the eyes and nose")) {
-            display.setText("Disease: Infectious Coryza \n \n Causes: Due to of GMOs  \n \n Control:Use of available antibiotics ");
+            display.setText("Disease: Infectious Coryza \n \n Causes: Due to use of GMOs  \n \n Control:Use of available antibiotics ");
         }
         if (selection.contains("Coughing and Sneezing") && selection.contains("raspy breath sounds")) {
-            display.setText("Disease: Infectious Coryza \n \n Causes: Due to of GMOs  \n \n Control:Use of available antibiotics ");
+            display.setText("Disease: Infectious Coryza \n \n Causes: Due to use of GMOs  \n \n Control:Use of available antibiotics ");
         }
         if (selection.contains("Coughing and Sneezing") && selection.contains("raspy breath sounds") && selection.contains("discharge from the eyes and nose")) {
-            display.setText("Disease: Infectious Coryza \n \n Causes: Due to of GMOs  \n \n Control:Use of available antibiotics ");
+            display.setText("Disease: Infectious Coryza \n \n Causes: Due to use of GMOs  \n \n Control:Use of available antibiotics ");
         }
         //for Newcastle
         if (selection.contains("Coughing and Sneezing") && selection.contains("Gasping")) {

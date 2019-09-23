@@ -236,7 +236,7 @@
                             android:textStyle="bold"
                             android:textSize="10dp"
                             android:layout_marginTop="10dp"
-                            android:text="Search Feedstores"/>
+                            android:text="Locate Feedstores"/>
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
@@ -247,7 +247,7 @@
                             android:gravity="center"
                             android:textSize="10dp"
                             android:textStyle="italic"
-                            android:text="Search for various feedstores or industries"
+                            android:text="Locate various feedstores or industries"
                             android:padding="5dp"
                             android:textColor="@android:color/darker_gray"/>
 

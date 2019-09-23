@@ -50,14 +50,14 @@
 
 
                 <Button
-                    android:id="@+id/video"
+                    android:id="@+id/btnvideo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/accent"
-                    android:text="Watch video guide"
+                    android:text="Poultry veterinarian video guide"
                     android:textColor="#fff"
                     android:textStyle="italic"
-                    android:enabled="false"/>
+                 />
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="100dp"

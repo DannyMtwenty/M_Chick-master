@@ -12,7 +12,11 @@
         android:icon="@drawable/chicksprof"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
-        <activity android:name=".OralMethod"></activity>
+        <activity android:name=".VideoMix"></activity>
+        <activity android:name=".VideoEye" />
+        <activity android:name=".VideoOral" />
+        <activity android:name=".VideoInjection" />
+        <activity android:name=".OralMethod" />
         <activity android:name=".DrinkingWater" />
         <activity android:name=".EyedropActivity" />
         <activity android:name=".InjectionActivity" />

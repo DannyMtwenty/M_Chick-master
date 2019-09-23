@@ -73,14 +73,14 @@
                      />
 
                 <Button
-                    android:id="@+id/video"
+                    android:id="@+id/btnvid"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/accent"
                     android:text="Watch video guide"
                     android:textColor="#fff"
                     android:textStyle="italic"
-                    android:enabled="false"/>
+                   />
 
                 <Button
                     android:id="@+id/btnhomu"
