@@ -4,6 +4,98 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EyedropActivity">
+    android:background="#00FF2A"
+    tools:context=".EyedropActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF7F00"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="19dp"
+                    android:text="EYE DROP VACCINATION IN POULTRY"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/primary_lightest"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                   />
+
+                <TextView
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="19dp"
+                    android:text="Application of the vaccine by eye-drop methods is probably the most effective for live lentogenic vaccines. It ensures that the vaccine reaches the individual bird and, as a consequence, titres obtained are usually uniform throughout the flock."
+                    android:textAlignment="center"
+                    android:textColor="@color/primary_lightest"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                />
+
+                <TextView
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="19dp"
+                    android:text="@string/dilution"
+                    android:textAlignment="center"
+                    android:textColor="@color/primary_lightest"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="49dp"
+                    android:text="@string/eyeimportance"
+                    android:textAlignment="center"
+                    android:textColor="@color/primary_lightest"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    />
+
+                <Button
+                    android:id="@+id/video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/accent"
+                    android:text="Watch video guide"
+                    android:textColor="#fff"
+                    android:textStyle="italic"
+                    android:enabled="false"/>
+
+                <Button
+                    android:id="@+id/btnhomu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:text="back to home"
+                    android:textColor="#fff"
+                    android:textStyle="italic"
+                    android:layout_marginBottom="19dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
 
 </RelativeLayout>

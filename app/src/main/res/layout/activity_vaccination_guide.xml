@@ -84,4 +84,13 @@
                 android:src="@drawable/vacc"/>
         </LinearLayout>
     </ScrollView>
+    <TextView
+        android:id="@+id/txtmainhome"
+        android:textColor="#FF00D4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="550dp"
+        android:text="Back to home"/>
 </RelativeLayout>

@@ -4,6 +4,98 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InjectionActivity">
+    android:background="#FF7F00"
+    tools:context=".InjectionActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF7F00"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="19dp"
+                    android:text="SUBCUTANEOUS INJECTION IN POULTRY"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/primary_lightest"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                  />
+
+                <TextView
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="19dp"
+                    android:text="This method involves the use of similar equipment to that used for the intramuscular technique. The main difference between the two techniques is that, in this case, the vaccine is injected under the skin, usually at the back of the neck, and not into the muscle. "
+                    android:textAlignment="center"
+                    android:textColor="@color/primary_lightest"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                     />
+
+                <TextView
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="19dp"
+                    android:text=" Care must be taken to ensure that the vaccine is injected into the bird and not just into the feathers or fluff in the case of very young chickens."
+                    android:textAlignment="center"
+                    android:textColor="@color/primary_lightest"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                     />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="49dp"
+                    android:text="The dose being administered should be checked for accuracy frequently. Maintain good hygiene practices to limit introducing contaminating organisms during the procedure."
+                    android:textAlignment="center"
+                    android:textColor="@color/primary_lightest"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                     />
+
+                <Button
+                    android:id="@+id/video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/accent"
+                    android:text="Watch video guide"
+                    android:textColor="#fff"
+                    android:textStyle="italic"
+                    android:enabled="false"/>
+
+                <Button
+                    android:id="@+id/btnhomu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:text="back to home"
+                    android:textColor="#fff"
+                    android:textStyle="italic"
+                    android:layout_marginBottom="19dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
 
 </RelativeLayout>
