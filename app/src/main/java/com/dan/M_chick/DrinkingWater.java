@@ -14,6 +14,14 @@ public class DrinkingWater extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drinking_water);
         home=(Button)findViewById(R.id.btnhomu);
+        Button vid=(Button)findViewById(R.id.btnvidmix);
+        vid.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(DrinkingWater.this,VideoMix.class);
+                startActivity(intent);
+            }
+        });
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
