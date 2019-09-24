@@ -165,12 +165,12 @@ public class Symptoms extends AppCompatActivity {
                     selection.remove("Swollen eyes");
                 }
                 break;
-            case R.id.yellowishdroppings:
+            case R.id.watereye:
                 if (checked) {
-                    selection.add("Yellowish droppings");
-                    display.setText("Disease: Fowl Cholera \n \n Causes: caused by pasteurella avicida microorganism  \n \n Control: Use of sulphur drugs, use of coccidiostat in feed, ensuring dry litter,Birds with acute type should be destroyed and burned,House should be thoroughly cleaned and disinfected  ");
+                    selection.add("Watery eye");
+                    display.setText("Disease: Infectious Bronchitis \n \n Causes: caused by avian infectious bronchitis virus,IBV  \n \n Control: keep chicks' immune system as healthy as possible, Use of Vaccines, Isolation of the chicks from the infected ones ");
                 } else {
-                    selection.remove("Yellowish droppings");
+                    selection.remove("Watery eye");
                 }
             case R.id.discharge:
                 if (checked) {

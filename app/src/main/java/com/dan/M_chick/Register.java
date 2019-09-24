@@ -21,7 +21,7 @@ public class Register extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+              setContentView(R.layout.activity_register);
         openHelper = new DatabaseHelper2(Register.this);
         reg = (Button) findViewById(R.id.signup);
         fname = (EditText) findViewById(R.id.fname);
@@ -33,6 +33,7 @@ public class Register extends AppCompatActivity {
         usrname = (EditText) findViewById(R.id.username1);
         passcode = (EditText) findViewById(R.id.password);
         login = (TextView) findViewById(R.id.txtlogin);
+
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -40,26 +41,59 @@ public class Register extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        reg.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                db = openHelper.getWritableDatabase();
+        if (fname.length()==0)
+        {
+            fname.setError("enter firstname");
+        }
+        if (lname.length()==0)
+        {
+            lname.setError("enter lastname");
+        }
+        if (years.length()==0)
+        {
+            years.setError("enter age");
+        }
+        if (gender.length()==0)
+        {
+            gender.setError("enter gender");
+        }
+        if (usrname.length()==0)
+        {
+            usrname.setError("enter username");
+        }
+        if (passcode.length()==0)
+        {
+            passcode.setError("enter password");
+        }
+        if (postaladdr.length()==0)
+        {
+            postaladdr.setError("enter postal address");
+        }
+        if (contact.length()==0)
+        {
+            contact.setError("enter contacts");
+        }
 
-                String First_Name = fname.getText().toString();
-                String Last_Name = lname.getText().toString();
-                Integer Age = Integer.parseInt(years.getText().toString());
-                Integer Phone = Integer.parseInt(contact.getText().toString());
-                String Address = postaladdr.getText().toString();
-                String Sex = gender.getText().toString();
-                String username = usrname.getText().toString();
-                String password = passcode.getText().toString();
+            reg.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    db = openHelper.getWritableDatabase();
 
-                insertdata(First_Name, Last_Name, Age, Phone, Address, Sex, username, password);
-                Toast.makeText(getApplicationContext(), "Registration Successful", Toast.LENGTH_LONG).show();
-                finish();
-            }
-        });
-    }
+                    String First_Name = fname.getText().toString();
+                    String Last_Name = lname.getText().toString();
+                    Integer Age = Integer.parseInt(years.getText().toString());
+                    Integer Phone = Integer.parseInt(contact.getText().toString());
+                    String Address = postaladdr.getText().toString();
+                    String Sex = gender.getText().toString();
+                    String username = usrname.getText().toString();
+                    String password = passcode.getText().toString();
+                        insertdata(First_Name, Last_Name, Age, Phone, Address, Sex, username, password);
+                        Toast.makeText(getApplicationContext(), "Registration Successful", Toast.LENGTH_LONG).show();
+                        finish();
+                }
+            });
+        }
+
     public void insertdata (String First_Name, String Last_Name, Integer Age, Integer Phone, String Address, String Sex, String username, String password)
     {
         ContentValues contentValues = new ContentValues();
