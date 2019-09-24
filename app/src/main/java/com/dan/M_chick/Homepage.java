@@ -28,6 +28,13 @@ public class Homepage extends AppCompatActivity {
         brooderCard = (CardView) findViewById(R.id.broodercard);
         reminderCard = (CardView) findViewById(R.id.remindercard);
         mapCard = (CardView) findViewById(R.id.mapcard);
+        mapCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(Homepage.this,MapsActivity.class);
+                startActivity(intent);
+            }
+        });
         vaccinationCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

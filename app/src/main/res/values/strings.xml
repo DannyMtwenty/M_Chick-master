@@ -84,4 +84,5 @@ use disinfectants to clean water receptacles as they will inactivate the vaccine
 use treated tap water. </string>
     <string name="drinkingadv">In rural areas, it is best to give the drinking water in the morning just as the chickens are released from the chicken house. In areas with abundant surface water, chickens find their own source of drinking water and vaccination via water is not appropriate.</string>
     <string name="oral">With this method the vaccine dose is given in the mouth. From here it may make its way to the respiratory system or it may continue in the digestive tract before entering the body.The recommended dosage is about 0.1-0.5ml</string>
+    <string name="title_activity_maps">Map</string>
 </resources>
