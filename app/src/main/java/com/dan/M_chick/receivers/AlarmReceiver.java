@@ -3,7 +3,7 @@ package com.dan.M_chick.receivers;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.support.v4.content.LocalBroadcastManager;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 import com.dan.M_chick.database.DatabaseHelper;
 import com.dan.M_chick.utils.AlarmUtil;

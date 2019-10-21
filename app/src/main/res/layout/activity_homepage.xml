@@ -24,7 +24,7 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:foreground="?android:attr/selectableItemBackground"
                     android:clickable="true"
                     android:id="@+id/diseasecard"
@@ -66,8 +66,8 @@
                             android:textStyle="italic" />
 
                     </LinearLayout>
-                </android.support.v7.widget.CardView>
-                <android.support.v7.widget.CardView
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
                     android:foreground="?android:attr/selectableItemBackground"
                     android:clickable="true"
                     android:id="@+id/vaccinationcard"
@@ -107,7 +107,7 @@
                             android:textColor="@android:color/darker_gray"/>
 
                     </LinearLayout>
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
             <LinearLayout
@@ -116,7 +116,7 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:foreground="?android:attr/selectableItemBackground"
                     android:id="@+id/broodercard"
                     android:clickable="true"
@@ -156,8 +156,8 @@
                             android:textColor="@android:color/darker_gray"/>
 
                     </LinearLayout>
-                </android.support.v7.widget.CardView>
-                <android.support.v7.widget.CardView
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
                     android:foreground="?android:attr/selectableItemBackground"
                     android:id="@+id/remindercard"
                     android:clickable="true"
@@ -203,7 +203,7 @@
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
             <LinearLayout
@@ -212,7 +212,7 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:foreground="?android:attr/selectableItemBackground"
                     android:id="@+id/mapcard"
                     android:clickable="true"
@@ -252,7 +252,7 @@
                             android:textColor="@android:color/darker_gray"/>
 
                     </LinearLayout>
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
         </LinearLayout>

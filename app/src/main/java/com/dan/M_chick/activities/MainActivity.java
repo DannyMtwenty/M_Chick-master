@@ -2,10 +2,10 @@ package com.dan.M_chick.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.viewpager.widget.ViewPager;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.util.TypedValue;
 import android.view.Window;
 
@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity implements ReminderAdapter.R
     @BindView(R.id.toolbar) Toolbar toolbar;
     @BindView(R.id.viewpager) ViewPager viewPager;
     @BindView(R.id.fab_button) FloatingActionButton floatingActionButton;
-
     private boolean fabIsHidden = false;
 
     @Override
@@ -39,12 +38,13 @@ public class MainActivity extends AppCompatActivity implements ReminderAdapter.R
             getSupportActionBar().setTitle(null);
         }
 
-        ViewPageAdapter adapter = new ViewPageAdapter(getSupportFragmentManager());
-        viewPager.setAdapter(adapter);
+       ViewPageAdapter adapter = new ViewPageAdapter(getSupportFragmentManager());
+       viewPager.setAdapter(adapter);
+       pagerSlidingTabStrip.setViewPager(viewPager);
+       int pageMargin = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 4, getResources().getDisplayMetrics());
+       viewPager.setPageMargin(pageMargin);
 
-        pagerSlidingTabStrip.setViewPager(viewPager);
-        int pageMargin = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 4, getResources().getDisplayMetrics());
-        viewPager.setPageMargin(pageMargin);
+
     }
 
     @OnClick(R.id.fab_button)

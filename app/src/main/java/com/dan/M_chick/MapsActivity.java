@@ -1,6 +1,6 @@
 package com.dan.M_chick;
 
-import android.support.v4.app.FragmentActivity;
+import androidx.fragment.app.FragmentActivity;
 import android.os.Bundle;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -64,8 +64,58 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         map.put("LocationID", "3");
         map.put("Latitude", "-1.283793");
         map.put("Longitude", "36.823709");
-        map.put("LocationName", "NeonChicks,Nairobi");
+        map.put("LocationName", "NeonChicks Poultry ltd,Nairobi");
         location.add(map);
+        // Location 4
+        map = new HashMap<String, String>();
+        map.put("LocationID", "4");
+        map.put("Latitude", "-1.173907");
+        map.put("Longitude", "36.759242");
+        map.put("LocationName", "Bradegate poultry industries,Banana hill");
+        location.add(map);
+        // Location 5
+        map = new HashMap<String, String>();
+        map.put("LocationID", "5");
+        map.put("Latitude", "-1.282376");
+        map.put("Longitude", "36.755466");
+        map.put("LocationName", "Kuku Mfalme,Nairobi");
+        location.add(map);
+        // Location 6
+        map = new HashMap<String, String>();
+        map.put("LocationID", "6");
+        map.put("Latitude", " -1.252169");
+        map.put("Longitude", "36.693322");
+        map.put("LocationName", "Tai's Chciken,Kikuyu");
+        location.add(map);
+        //location 7
+        map = new HashMap<String, String>();
+        map.put("LocationID", "7");
+        map.put("Latitude", "-1.229164");
+        map.put("Longitude", "36.919292");
+        map.put("LocationName", "Chicken Arcade,Nairobi");
+        location.add(map);
+        //location 8
+        map = new HashMap<String, String>();
+        map.put("LocationID", "8");
+        map.put("Latitude", "-1.287161");
+        map.put("Longitude", "36.830733");
+        map.put("LocationName", "Poultry Farming,Nairobi");
+        location.add(map);
+        //location 9
+        map = new HashMap<String, String>();
+        map.put("LocationID", "9");
+        map.put("Latitude", "-1.278001");
+        map.put("Longitude", " 36.828861");
+        map.put("LocationName", "Pagak Farm Solutions Ltd,Nairobi");
+        location.add(map);
+        //location 10
+        map = new HashMap<String, String>();
+        map.put("LocationID", "10");
+        map.put("Latitude", "-1.287804");
+        map.put("Longitude", " 36.830754");
+        map.put("LocationName", "Wakulima House, Nairobi City");
+        location.add(map);
+
 // *** Focus & Zoom
         Latitude = Double.parseDouble(location.get(0).get("Latitude").toString());
         Longitude = Double.parseDouble(location.get(0).get("Longitude").toString());
